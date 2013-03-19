@@ -1,0 +1,45 @@
+<div class = "container">
+  <h1>JS Racer!</h1>
+  <h2> Hello, <%=@one.name %>! </h2>
+  <h2> Hello, <%=@two.name %>! </h2>
+
+  <table class="racer_table">
+  <tr id="player1_strip">
+    <td>Start:</td>
+    <td class="active"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr id="player2_strip">
+
+    <td>Start:</td>
+    <td class="active"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  </table>
+
+  <form id="login" action="/game" method="post">
+      <input type="submit" name="game" class = "game" value = "Start!">
+
+  </form>
+
+  <div class = "winner">
+    
+        <a href="javascript:history.go(0)" class="restart">Restart</a>
+
+  </div>
